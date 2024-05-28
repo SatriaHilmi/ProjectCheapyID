@@ -9,7 +9,7 @@
         <div class="row">
           <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
             <div class="login-brand">
-              <img src="assets/img/stisla-fill.svg" alt="logo" width="100" class="shadow-light rounded-circle">
+              <img src="assets/img/logo.png" alt="logo" width="100" class="shadow-light rounded-circle">
             </div>
 
             <div class="card card-primary">
@@ -75,7 +75,7 @@
                     </button>
                     </div>
                     <div class="form-group">
-                    <p class="center">SUDAH ADA AKUN, YAUDAH KEMBALI CUY!!</p><a href="{{route('login')}}">Login</a>
+                    <p class="center">Sudah punya akun?</p><a href="{{route('login')}}">Login</a>
                 </form>
               </div>
             </div>

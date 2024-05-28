@@ -70,6 +70,17 @@
         </div>
     </section>
 </div>
+
+{{-- </div>
+</div>
+<div class="card-footer text-right">
+    <button type="submit" class="btn btn-primary">Simpan</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+</div> --}}
 @endsection
 
 @section('addon-script')

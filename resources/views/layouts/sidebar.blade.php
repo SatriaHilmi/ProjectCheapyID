@@ -1,10 +1,10 @@
 <div class="main-sidebar sidebar-style-2">
     <aside id="sidebar-wrapper">
       <div class="sidebar-brand">
-        <a href="index.html">LaraPOS</a>
+        <a href="index.html">cheapyid</a>
       </div>
       <div class="sidebar-brand sidebar-brand-sm">
-        <a href="index.html">LP</a>
+        <a href="index.html">CP</a>
       </div>
       <ul class="sidebar-menu">
         <li class="menu-header">Dashboard</li>
@@ -57,7 +57,7 @@
 
       @endif
 
-      <li class="menu-header">LaraPOS</li>
+      <li class="menu-header">cheapyid</li>
         <li class="{{ (Request::is('transaction/index') || Request::is('transaction/report') || Request::is('transaction/create/*')) ? 'dropdown active' : 'dropdown' }}">
           <a href="#" class="nav-link has-dropdown" data-toggle="dropdown">
             <i class="ion-ios-cart"></i> <span>Transaction</span>

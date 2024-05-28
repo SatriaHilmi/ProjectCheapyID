@@ -99,6 +99,84 @@
             </div>
         </section>
     </div>
+
+
+    {{-- <div class="card">
+        <div class="card-header">
+            <a href="{{ route('user.create') }}" class="btn btn-icon icon-left btn-primary"><i
+                    class="fas fa-plus"></i> Tambah</a>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="myTable">
+                    <thead>
+                        <tr>
+                            <th class="text-center">
+                                #
+                            </th>
+                            <th>Foto</th>
+                            <th>Nama</th>
+                            <th>Email</th>
+                            <th>Verifikasi</th>
+                            <th>Dibuat</th>
+                            <th class="text-center">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @forelse ($items as $index => $item)
+                            <tr>
+                                <td class="text-center">{{ $index + 1 }}</td>
+                                <td class="text-center">
+                                    @if ($item->photo && Storage::disk('public')->exists($item->photo))
+                                        <img src="{{ Storage::url($item->photo) }}" alt="{{ $item->name }}"
+                                            class="img-fluid rounded mt-1 mb-1" height="10px" width="80px" />
+                                    @else
+                                        <img src="{{ url('assets/img/image_not_available.png') }}"
+                                            alt="{{ $item->name }}" class="img-fluid rounded mt-1 mb-1"
+                                            height="10px" width="80px" />
+                                    @endif
+                                </td>
+                                <td>{{ $item->name }}</td>
+                                <td>{{ $item->email }}</td>
+                                <td>
+                                    <span
+                                        class="badge {{ $item->email_verified_at ? 'badge-success' : 'badge-warning' }}">
+                                        {{ $item->email_verified_at ? 'Sudah' : 'Belum' }}
+                                    </span>
+                                </td>
+                                <td>{{ date('d-m-Y', strtotime($item->created_at)) }}</td>
+                                <td class="text-center">
+                                    <div class="btn-group" role="group">
+                                        <a href="{{ route('user.edit', $item->id) }}"
+                                            class="btn btn-success btn-icon icon-left">
+                                            <i class="fas fa-edit"></i> Edit
+                                        </a>
+                                        <form action="{{ route('user.destroy', $item->id) }}" method="post">
+                                            @csrf
+                                            @method('delete')
+                                            <button type="submit"
+                                                class="btn btn-danger btn-icon icon-left btn-delete">
+                                                <i class="fas fa-trash-alt"></i> Hapus
+                                            </button>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                        @empty
+                            <tr>
+                                <td colspan="8" class="text-center">
+                                    Belum ada data user.
+                                </td>
+                            </tr>
+                        @endforelse
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+</div> --}}
 @endsection
 
 @section('addon-script')

@@ -20,7 +20,7 @@
                 {{ $title }}
             </h2>
             <p class="section-lead">
-                Daftar customer yang terdaftar.
+                Daftar Customers.
             </p>
 
             <div class="card">
