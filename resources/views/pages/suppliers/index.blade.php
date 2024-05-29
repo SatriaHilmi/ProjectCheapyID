@@ -38,7 +38,6 @@
                                     <th>Nama</th>
                                     <th>Alamat</th>
                                     <th>No Telp</th>
-                                    <th>Email</th>
                                     <th class="text-center">Aksi</th>
                                 </tr>
                             </thead>
